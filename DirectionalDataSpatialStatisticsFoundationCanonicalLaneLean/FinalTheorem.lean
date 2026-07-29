@@ -1,0 +1,17 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.DirectionalDataSpatialStatisticsFoundationCanonicalLaneLean.DirectionalDistributions
+import HautevilleHouse.DirectionalDataSpatialStatisticsFoundationCanonicalLaneLean.NeymanPearsonBridge
+import HautevilleHouse.DirectionalDataSpatialStatisticsFoundationCanonicalLaneLean.MLEConsistency
+
+namespace HautevilleHouse
+namespace DirectionalDataSpatialStatisticsFoundationCanonicalLaneLean
+
+def ConstrainedDirectionalDataSpatialStatisticsFoundationClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_directional_data_spatial_statistics_foundation_endgame (A : AdmissibleClass) :
+    ConstrainedDirectionalDataSpatialStatisticsFoundationClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end DirectionalDataSpatialStatisticsFoundationCanonicalLaneLean
+end HautevilleHouse
